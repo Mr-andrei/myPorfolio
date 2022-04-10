@@ -45,7 +45,7 @@
     background-size: cover;
 
 
-    box-shadow: 20px -15px 10px 5px rgba(120, 119, 119, 1);
+    box-shadow: 4px -6px 20px 5px rgba(120, 119, 119, 1);
 }
 
 .images img {
@@ -102,7 +102,7 @@
 }
 
 @media (max-width: 450px) {
-  
+
     .images .text_me {
        width: 90%;
        height: 60%;
