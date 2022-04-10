@@ -6,7 +6,7 @@
     overflow: hidden;
     height: 100vh;
     background-color: #252527;
-    /*position: relative;*/
+
 
 }
 .particle{
@@ -91,13 +91,22 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+    }
+    .text_me {
+        width: 50%;
+        height: 60%;
+        margin: 0 auto 20px;
     }
 
 }
 
 @media (max-width: 450px) {
+  
     .images .text_me {
        width: 90%;
        height: 60%;
+        margin: 0 10px;
     }
+
 }
