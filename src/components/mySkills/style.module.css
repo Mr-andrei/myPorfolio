@@ -1,0 +1,79 @@
+
+.mainWrapper {
+    background-color: #1f1f20;
+    padding: 100px 0;
+}
+
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 100px;
+}
+
+.title h3 {
+    font: 700 40px/1.2 'Josefin Sans', sans-serif;
+    letter-spacing: 5px;
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 300;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.blocks_skills {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.block_info_skill {
+    width: 320px;
+    margin-bottom: 70px;
+}
+
+.block_about_skill{
+    text-align: center;
+    font: 400 14px/1.8 'Poppins', sans-serif;
+    color: #fff;
+    opacity: 0.9;
+}
+
+.sub_title {
+    text-transform: uppercase;
+    padding: 0;
+    font-size: 16px;
+    font-family:  'Josefin Sans', sans-serif;
+    letter-spacing: 5px;
+    margin: 0;
+    color: #fff;
+    opacity: 0.9;
+}
+
+.liner {
+    background-color: #E7746F;
+    width: 200px;
+    height: 1px;
+    margin: 0 auto 100px;
+}
+
+.block_skill {
+    color: #E7746F;
+    height: 80px;
+    width: 80px;
+    margin: 0px auto 30px;
+    background: rgba(255, 255, 255, 0.1);
+    display: block;
+    line-height: 80px;
+    font-size: 30px;
+    box-shadow: -6px 10px 40px rgb(0 0 0 / 6%);
+    text-align: center;
+    transform: rotate(45deg);
+    transform-origin: center;
+}

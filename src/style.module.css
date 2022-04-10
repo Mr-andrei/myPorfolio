@@ -1,0 +1,8 @@
+*{
+  box-sizing: border-box;
+}
+.app_container{
+  background: #252527;
+  min-height: 100%;
+  min-width: 100%;
+}

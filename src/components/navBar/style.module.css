@@ -1,0 +1,38 @@
+.mainWrapper{
+    background-color: #252527;
+    width: 100%;
+
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: end;
+}
+
+.nav_block {
+    width: 600px;
+    padding: 15px 0;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.text_linc a {
+    text-decoration: none;
+    font-family: Raleway, sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ffffff;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.active{
+    color: #E7746F
+}
+.text_linc a:hover {
+    color: #E7746F
+}
