@@ -18,7 +18,7 @@ const MyWorks = () => {
         backgroundImage: `url(${todo})`
     }
 
-    const textAboutTodolist = "React/Redux/Redux-Toolkit/React-router-dom v6/" +
+    const textAboutTodolist = "React/Redux/React-router-dom v6/" +
         "Jest(Unit-Tests) /Storybook/Axios /Formik/Material UI;" +
         "Todolist app created with react hooks, routing and" +
         "redirects, material UI, REST api request/response flow," +
@@ -26,7 +26,7 @@ const MyWorks = () => {
 
     const textAboutCards = "Creating learning app in team with using git, work with" +
         "Used technologies:" +
-        "React/Redux-Toolkit/TypeScript/React-router-dom" +
+        "React/TypeScript/React-router-dom" +
         "v6/Axios /Material UI/Formik/SCSS/Git, Github" +
         "axios(CRUD)."
 
