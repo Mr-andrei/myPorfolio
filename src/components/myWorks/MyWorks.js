@@ -1,5 +1,6 @@
 import style from './style.module.css'
 import cardsProject from './../../photos/Prokect_card.png'
+import socialNetwork from './../../photos/socialNetwork.png'
 import {WorkIcon} from "./WorkIcon";
 import Slide from 'react-reveal/Slide';
 
@@ -9,7 +10,25 @@ const MyWorks = () => {
     const cardImg = {
         backgroundImage: `url(${cardsProject})`
     }
+    const socialNetwor = {
+        backgroundImage: `url(${socialNetwork})`
+    }
 
+    const textAboutTodolist = "React/Redux/Redux-Toolkit/React-router-dom v6/" +
+        "Jest(Unit-Tests) /Storybook/Axios /Formik/Material UI;" +
+        "Todolist app created with react hooks, routing and" +
+        "redirects, material UI, REST api request/response flow," +
+        "unit-tests and etc."
+
+    const textAboutCards = "Creating learning app in team with using git, work with" +
+        "Used technologies:" +
+        "React/Redux-Toolkit/TypeScript/React-router-dom" +
+        "v6/Axios /Material UI/Formik/SCSS/Git, Github" +
+        "axios(CRUD)."
+
+    const socialNetworkText = "Social network app with using react hooks, routing, lazy" +
+        "loading, working with REST api, login/logout flow," +
+        "Used technologies: React/Redux/TypeScript/Reduxthunk/React-router-dom v6/React-hookform/Axios/Jest;"
     return (
         <div
             id="work"
@@ -26,10 +45,32 @@ const MyWorks = () => {
 
             <div className={style.container_works}>
                 <Slide bottom>
-                    <WorkIcon images={cardImg} link={"https://Mr-andrei.github.io/mFridayProject"}/>
+                    <WorkIcon
+                        name={"Todolist.  "}
+                        images={cardImg}
+                        link={"https://Mr-andrei.github.io/mFridayProject"}
+                        text={textAboutTodolist}
+
+                    />
                 </Slide>
                 <Slide bottom>
-                    <WorkIcon images={cardImg} link={"https://Mr-andrei.github.io/mFridayProject"}/>
+                    <WorkIcon
+                        name={"Learning on cards.  "}
+                        images={cardImg}
+                        link={"https://Mr-andrei.github.io/mFridayProject"}
+                        text={textAboutCards}
+                        linkGit={"https://github.com/Mr-andrei/mFridayProject"}
+
+                    />
+                </Slide>
+
+                <Slide bottom>
+                    <WorkIcon
+                        name={"Social network.  "}
+                        images={socialNetwor}
+                        text={socialNetworkText}
+                        linkGit={"https://github.com/Mr-andrei/My_firstreact"}
+                    />
                 </Slide>
             </div>
 

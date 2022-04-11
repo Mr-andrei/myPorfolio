@@ -8,12 +8,14 @@ export const WorkIcon = (props) => {
                 <div className={style.work_box} style={props.images}>
 
                 </div>
-                <a className={style.linkToWeb} href={props.link}> Show</a>
+                { props.link && <a className={style.linkToWeb} href={props.link}> Show</a>}
+
 
             </div>
             <div className={style.box_info_work}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur delectus et ex excepturi fugiat,
-                illo in maxime repellat similique soluta.
+               <span className={style.name}> {props.name}</span>
+                {props.text}
+                <a className={style.linkGit} href={props.linkGit}> On GitHub</a>
             </div>
 
         </div>

@@ -27,10 +27,8 @@ const MySkills = () => {
                             </div>
                             <div className={style.text_about_skills}>
                                 <span className={style.sub_title}>Java Script</span>
-                                <p className={style.block_about_skill}>Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing
-                                    elit. Eligendi impedit in optio quo ratione saepe sequi temporibus vitae? Enim,
-                                    numquam.</p>
+                                <p className={style.block_about_skill}>Classes, functions, working with
+                                    arrays and objects, Promises, REST Api.</p>
                             </div>
                         </div>
                     </Slide>
@@ -41,10 +39,8 @@ const MySkills = () => {
                             </div>
                             <div className={style.text_about_skills}>
                                 <span className={style.sub_title}>React</span>
-                                <p className={style.block_about_skill}>Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing
-                                    elit. Eligendi impedit in optio quo ratione saepe sequi temporibus vitae? Enim,
-                                    numquam.</p>
+                                <p className={style.block_about_skill}>Class and functional components, component
+                                    lifecycle methods, props, hooks, HO.And with React i use Redux.</p>
                             </div>
                         </div>
                     </Slide>
@@ -55,10 +51,7 @@ const MySkills = () => {
                             </div>
                             <div className={style.text_about_skills}>
                                 <span className={style.sub_title}>Type Script</span>
-                                <p className={style.block_about_skill}>Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing
-                                    elit. Eligendi impedit in optio quo ratione saepe sequi temporibus vitae? Enim,
-                                    numquam.</p>
+                                <p className={style.block_about_skill}>As type, generics, infer</p>
                             </div>
                         </div>
                     </Slide>
@@ -69,10 +62,7 @@ const MySkills = () => {
                             </div>
                             <div className={style.text_about_skills}>
                                 <span className={style.sub_title}>HTML</span>
-                                <p className={style.block_about_skill}>Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing
-                                    elit. Eligendi impedit in optio quo ratione saepe sequi temporibus vitae? Enim,
-                                    numquam.</p>
+                                <p className={style.block_about_skill}>Responsive design,flex,grid.</p>
                             </div>
                         </div>
                     </Slide>
@@ -83,10 +73,8 @@ const MySkills = () => {
                             </div>
                             <div className={style.text_about_skills}>
                                 <span className={style.sub_title}>CSS</span>
-                                <p className={style.block_about_skill}>Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing
-                                    elit. Eligendi impedit in optio quo ratione saepe sequi temporibus vitae? Enim,
-                                    numquam.</p>
+                                <p className={style.block_about_skill}>Common CSS, variables, mixins, functions,
+                                    pseudo-classes, pseudo-elements, media queries.</p>
                             </div>
                         </div>
                     </Slide>
