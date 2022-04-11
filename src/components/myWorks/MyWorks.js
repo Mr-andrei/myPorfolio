@@ -52,9 +52,9 @@ const MyWorks = () => {
                     <WorkIcon
                         name={"Todolist.  "}
                         images={todolistImage}
-                        link={"https://mr-andrei.github.io/Todolist/"}
+                        link={"https://mr-andrei.github.io/TodolistFinaly/"}
                         text={textAboutTodolist}
-                        linkGit={"https://github.com/Mr-andrei/Todolist"}
+                        linkGit={"https://github.com/Mr-andrei/TodolistFinaly"}
 
                     />
                 </Slide>
