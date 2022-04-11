@@ -1,6 +1,7 @@
 import style from './style.module.css'
 import cardsProject from './../../photos/Prokect_card.png'
 import socialNetwork from './../../photos/socialNetwork.png'
+import todo from './../../photos/Todolist.png'
 import {WorkIcon} from "./WorkIcon";
 import Slide from 'react-reveal/Slide';
 
@@ -12,6 +13,9 @@ const MyWorks = () => {
     }
     const socialNetwor = {
         backgroundImage: `url(${socialNetwork})`
+    }
+    const todolistImage = {
+        backgroundImage: `url(${todo})`
     }
 
     const textAboutTodolist = "React/Redux/Redux-Toolkit/React-router-dom v6/" +
@@ -47,9 +51,10 @@ const MyWorks = () => {
                 <Slide bottom>
                     <WorkIcon
                         name={"Todolist.  "}
-                        images={cardImg}
-                        link={"https://Mr-andrei.github.io/mFridayProject"}
+                        images={todolistImage}
+                        link={"https://mr-andrei.github.io/Todolist/"}
                         text={textAboutTodolist}
+                        linkGit={"https://github.com/Mr-andrei/Todolist"}
 
                     />
                 </Slide>
