@@ -2,6 +2,7 @@ import style from './style.module.css'
 import cardsProject from './../../photos/Prokect_card.png'
 import socialNetwork from './../../photos/socialNetwork.png'
 import todo from './../../photos/Todolist.png'
+import searchGit from './../../photos/SearchGit.png'
 import {WorkIcon} from "./WorkIcon";
 import Slide from 'react-reveal/Slide';
 
@@ -17,6 +18,9 @@ const MyWorks = () => {
     const todolistImage = {
         backgroundImage: `url(${todo})`
     }
+    const gitSearchAppImage = {
+        backgroundImage: `url(${searchGit})`
+    }
 
     const textAboutTodolist = "React/Redux/React-router-dom v6/" +
         "Jest(Unit-Tests) /Storybook/Axios /Formik/Material UI;" +
@@ -28,6 +32,12 @@ const MyWorks = () => {
         "Used technologies:" +
         "React/TypeScript/React-router-dom" +
         "v6/Axios /Material UI/Formik/SCSS/Git, Github" +
+        "axios(CRUD)."
+
+    const searchGet = "Creating app for search on git" +
+        "Used technologies:" +
+        "React/TypeScript/Redux" +
+        "v6/Axios /Git, Github" +
         "axios(CRUD)."
 
     const socialNetworkText = "Social network app with using react hooks, routing, lazy" +
@@ -75,6 +85,16 @@ const MyWorks = () => {
                         images={socialNetwor}
                         text={socialNetworkText}
                         linkGit={"https://github.com/Mr-andrei/My_firstreact"}
+                    />
+                </Slide>
+
+                <Slide bottom>
+                    <WorkIcon
+                        name={"Search people on GitHub.  "}
+                        images={gitSearchAppImage}
+                        link={"https://mr-andrei.github.io/SearchGit"}
+                        text={searchGet}
+                        linkGit={"https://github.com/Mr-andrei/SearchGit"}
                     />
                 </Slide>
             </div>
