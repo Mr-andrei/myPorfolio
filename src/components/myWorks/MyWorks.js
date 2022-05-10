@@ -3,6 +3,8 @@ import cardsProject from './../../photos/Prokect_card.png'
 import socialNetwork from './../../photos/socialNetwork.png'
 import todo from './../../photos/Todolist.png'
 import searchGit from './../../photos/SearchGit.png'
+import countryImg from './../../photos/CountryProject.png'
+import weatherImg from './../../photos/WeatherProjectpng.png'
 import {WorkIcon} from "./WorkIcon";
 import Slide from 'react-reveal/Slide';
 
@@ -21,6 +23,12 @@ const MyWorks = () => {
     const gitSearchAppImage = {
         backgroundImage: `url(${searchGit})`
     }
+    const countryAppImage = {
+        backgroundImage: `url(${countryImg})`
+    }
+    const weatherAppImage = {
+        backgroundImage: `url(${weatherImg})`
+    }
 
     const textAboutTodolist = "React/Redux/React-router-dom v6/" +
         "Jest(Unit-Tests) /Storybook/Axios /Formik/Material UI;" +
@@ -35,6 +43,17 @@ const MyWorks = () => {
         "axios(CRUD)."
 
     const searchGet = "Creating app for search on git" +
+        "Used technologies:" +
+        "React/TypeScript/Redux" +
+        "v6/Axios /Git, Github" +
+        "axios(CRUD)."
+
+    const weatherApp = "Creating app for search weather" +
+        "Used technologies:" +
+        "React/TypeScript/Redux" +
+        "v6/Axios /Git, Github" +
+        "axios(CRUD)."
+    const countryApp = "Creating app for search country" +
         "Used technologies:" +
         "React/TypeScript/Redux" +
         "v6/Axios /Git, Github" +
@@ -78,16 +97,6 @@ const MyWorks = () => {
 
                     />
                 </Slide>
-
-                <Slide bottom>
-                    <WorkIcon
-                        name={"Social network.  "}
-                        images={socialNetwor}
-                        text={socialNetworkText}
-                        linkGit={"https://github.com/Mr-andrei/My_firstreact"}
-                    />
-                </Slide>
-
                 <Slide bottom>
                     <WorkIcon
                         name={"Search people on GitHub.  "}
@@ -95,6 +104,34 @@ const MyWorks = () => {
                         link={"https://mr-andrei.github.io/SearchGit"}
                         text={searchGet}
                         linkGit={"https://github.com/Mr-andrei/SearchGit"}
+                    />
+                </Slide>
+
+                <Slide bottom>
+                    <WorkIcon
+                        name={"Search country.  "}
+                        images={countryAppImage}
+                        link={"https://mr-andrei.github.io/CountryProject/"}
+                        text={countryApp}
+                        linkGit={"https://github.com/Mr-andrei/CountryProject"}
+                    />
+                </Slide>
+
+                <Slide bottom>
+                    <WorkIcon
+                        name={"Search weather.  "}
+                        images={weatherAppImage}
+                        link={"https://mr-andrei.github.io/WeatherProject/"}
+                        text={weatherApp}
+                        linkGit={"https://github.com/Mr-andrei/WeatherProject"}
+                    />
+                </Slide>
+                <Slide bottom>
+                    <WorkIcon
+                        name={"Social network.  "}
+                        images={socialNetwor}
+                        text={socialNetworkText}
+                        linkGit={"https://github.com/Mr-andrei/My_firstreact"}
                     />
                 </Slide>
             </div>
