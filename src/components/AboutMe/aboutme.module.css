@@ -1,0 +1,31 @@
+
+
+.main_wrapper {
+    background-color: #ecf0f3;
+    margin-bottom: 200px;
+}
+
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
+.title {
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.container_text_about_me {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.text_about_me {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}

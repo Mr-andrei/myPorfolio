@@ -3,22 +3,23 @@ import Slide from 'react-reveal/Slide';
 import {Link, animateScroll as scroll} from "react-scroll";
 import {useState} from "react";
 
+
 const NavBar = () => {
 
     const [openMenu,  setOpenMenu] = useState(false)
 
     return (
         <div className={style.mainWrapper}>
-             <span className={style.hamburger} onClick={()=> setOpenMenu (!openMenu)}>
+            { !openMenu ? <span className={style.hamburger} onClick={() => setOpenMenu(!openMenu)}>
                         <hr className={style.line1}></hr>
                         <hr className={style.line2}></hr>
                         <hr className={style.line3}></hr>
-               </span>
+               </span> : <span
+                className={style.close}
+                onClick={()=> setOpenMenu (false)}
+            ></span> }
             <div className={openMenu ?   style.containerOpen : style.container}>
-                <span
-                    className={style.close}
-                    onClick={()=> setOpenMenu (false)}
-                ></span>
+
                 <Slide right cascade>
                     <nav className={style.nav_block}>
                     <span className={style.text_linc} >

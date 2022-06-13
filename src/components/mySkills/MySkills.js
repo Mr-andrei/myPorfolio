@@ -1,84 +1,63 @@
 import style from './style.module.css'
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faCss3Alt, faHtml5, faJs, faReact} from '@fortawesome/free-brands-svg-icons'
-import {faFileCode} from "@fortawesome/free-regular-svg-icons";
-import Slide from 'react-reveal/Slide';
+import webStorm from "./../../photos/skills/webstorm-svgrepo-com.svg"
+import git from "./../../photos/skills/git.svg"
+import jS from "./../../photos/skills/js-svgrepo-com.svg"
+import tS from "./../../photos/skills/typescript-svgrepo-com.svg"
+import hTML from "./../../photos/skills/html5-svgrepo-com.svg"
+import cSS from "./../../photos/skills/css3-svgrepo-com.svg"
+import redux from "./../../photos/skills/redux-svgrepo-com.svg"
+import restApi from "./../../photos/skills/api.svg"
+import figma from "./../../photos/skills/figma.7ec53a4a5c6c13b7d459f072fc73adf1.svg"
+import materialUI from "./../../photos/skills/material-ui.ca66f0a99617ff6494c3.png"
+import Fade from 'react-reveal/Fade';
 
+const arrIcons = [
+    {icon: jS, name: "JS"},
+    {icon: tS, name: "TS"},
+    {icon: redux, name: "Redux"},
+    {icon: hTML, name: "HTML"},
+    {icon: cSS, name: "CSS"},
+    {icon: restApi, name: "Rest API"},
+    {icon: git, name: "Git-hub"},
+    {icon: webStorm, name: "WebStorm"},
+    {icon: figma, name: "Figma"},
+    {icon: materialUI, name: "MaterialUI"}
 
+]
+// const arrIconsSecond = [
+//     {icon: restApi, name: "Rest API"},
+//     {icon: git, name: "Git-hub"},
+//     {icon: webStorm, name: "WebStorm"},
+//     {icon: figma, name: "Figma"},
+//     {icon: materialUI, name: "MaterialUI"}
+// ]
 const MySkills = () => {
     return (
         <div
             id="skills"
             className={style.mainWrapper}>
             <div className={style.container}>
-                <div className={style.title}>
-                    <Slide top>
-                        <h3> My Skills</h3>
-                    </Slide>
+                <div className={style.container_title}>
+                    <h3 className={style.title}>My Skills</h3>
                 </div>
-                <Slide right>
-                    <div className={style.liner}></div>
-                </Slide>
-                <div className={style.blocks_skills}>
-                    <Slide left>
-                        <div className={style.block_info_skill}>
-                            <div className={style.block_skill}>
-                                <FontAwesomeIcon icon={faJs} style={{transform: 'rotate(-45deg)'}}/>
-                            </div>
-                            <div className={style.text_about_skills}>
-                                <span className={style.sub_title}>Java Script</span>
-                                <p className={style.block_about_skill}>Classes, functions, working with
-                                    arrays and objects, Promises, REST Api.</p>
-                            </div>
-                        </div>
-                    </Slide>
-                    <Slide top>
-                        <div className={style.block_info_skill}>
-                            <div className={style.block_skill}>
-                                <FontAwesomeIcon icon={faReact} style={{transform: 'rotate(-45deg)'}}/>
-                            </div>
-                            <div className={style.text_about_skills}>
-                                <span className={style.sub_title}>React</span>
-                                <p className={style.block_about_skill}>Class and functional components, component
-                                    lifecycle methods, props, hooks, HO.And with React i use Redux.</p>
-                            </div>
-                        </div>
-                    </Slide>
-                    <Slide right>
-                        <div className={style.block_info_skill}>
-                            <div className={style.block_skill}>
-                                <FontAwesomeIcon icon={faFileCode} style={{transform: 'rotate(-45deg)'}}/>
-                            </div>
-                            <div className={style.text_about_skills}>
-                                <span className={style.sub_title}>Type Script</span>
-                                <p className={style.block_about_skill}>As type, generics, infer</p>
-                            </div>
-                        </div>
-                    </Slide>
-                    <Slide left>
-                        <div className={style.block_info_skill}>
-                            <div className={style.block_skill}>
-                                <FontAwesomeIcon icon={faHtml5} style={{transform: 'rotate(-45deg)'}}/>
-                            </div>
-                            <div className={style.text_about_skills}>
-                                <span className={style.sub_title}>HTML</span>
-                                <p className={style.block_about_skill}>Responsive design,flex,grid.</p>
-                            </div>
-                        </div>
-                    </Slide>
-                    <Slide right>
-                        <div className={style.block_info_skill}>
-                            <div className={style.block_skill}>
-                                <FontAwesomeIcon icon={faCss3Alt} style={{transform: 'rotate(-45deg)'}}/>
-                            </div>
-                            <div className={style.text_about_skills}>
-                                <span className={style.sub_title}>CSS</span>
-                                <p className={style.block_about_skill}>Common CSS, variables, mixins, functions,
-                                    pseudo-classes, pseudo-elements, media queries.</p>
-                            </div>
-                        </div>
-                    </Slide>
+
+                <div className={style.container_skills_one}>
+                    {arrIcons.map((elem, index) => {
+                        return (
+                            <Fade top>
+                                <div
+                                    className={style.skill_box}
+                                    key={index}>
+                                    <img
+                                        className={style.image_icon}
+                                        src={elem.icon} alt={elem.name}/>
+                                    <span className={style.skill_text}>{elem.name}</span>
+                                </div>
+                            </Fade>
+                        )
+                    })}
                 </div>
+
 
             </div>
         </div>

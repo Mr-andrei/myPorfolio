@@ -30,112 +30,95 @@ const MyWorks = () => {
         backgroundImage: `url(${weatherImg})`
     }
 
-    const textAboutTodolist = "React/Redux/React-router-dom v6/" +
-        "Jest(Unit-Tests) /Storybook/Axios /Formik/Material UI;" +
-        "Todolist app created with react hooks, routing and" +
-        "redirects, material UI, REST api request/response flow," +
-        "unit-tests and etc."
+    const textAboutTodolist =" React/Redux/ TypeScript/React-router-dom v6/" +
+        "Jest(Unit-Tests) /Storybook/Axios /Formik/Material UI;"
 
-    const textAboutCards = "Creating learning app in team with using git, work with" +
-        "Used technologies:" +
-        "React/TypeScript/React-router-dom" +
-        "v6/Axios /Material UI/Formik/SCSS/Git, Github" +
-        "axios(CRUD)."
 
-    const searchGet = "Creating app for search on git" +
-        "Used technologies:" +
-        "React/TypeScript/Redux" +
-        "v6/Axios /Git, Github" +
-        "axios(CRUD)."
+    const textAboutCards = "React/Redux/ TypeScript/React-router-dom" +
+        "v6/Axios /Material UI/Formik/"
 
-    const weatherApp = "Creating app for search weather" +
-        "Used technologies:" +
-        "React/TypeScript/Redux" +
-        "v6/Axios /Git, Github" +
-        "axios(CRUD)."
-    const countryApp = "Creating app for search country" +
-        "Used technologies:" +
-        "React/TypeScript/Redux" +
-        "v6/Axios /Git, Github" +
-        "axios(CRUD)."
+    const searchGet = "React/Redux/ TypeScript" +
+        "v6/Axios/Github"
 
-    const socialNetworkText = "Social network app with using react hooks, routing, lazy" +
-        "loading, working with REST api, login/logout flow," +
-        "Used technologies: React/Redux/TypeScript/Reduxthunk/React-router-dom v6/React-hookform/Axios/Jest;"
+
+    const weatherApp ="React/Redux/ TypeScript/" +
+        "v6/Axios/ Github."
+    const countryApp = "React/Redux/  TypeScript/" +
+        "v6/Axios /Github."
+
+
+    const socialNetworkText =  "React/Redux/ TypeScript/Redux-thunk/React-router-dom v6/React-hook-form/Axios/Jest;"
     return (
-        <div
-            id="work"
-            className={style.container}>
-            <div className={style.title_work}>
-                <Slide top>
-                    <h3> My Works</h3>
-                </Slide>
+        <div className={style.main_wrapper}>
+            <div
+                id="work"
+                className={style.container}>
+                <div className={style.container_title_work}>
+                    <Slide top>
+                        <h2 className={style.title_work}> My Works</h2>
+                    </Slide>
+                </div>
+
+                <div className={style.container_works}>
+                    <Slide bottom>
+                        <WorkIcon
+                            name={"Todolist.  "}
+                            images={todolistImage}
+                            link={"https://mr-andrei.github.io/TodolistFinaly/"}
+                            text={textAboutTodolist}
+                            linkGit={"https://github.com/Mr-andrei/TodolistFinaly"}
+
+                        />
+                    </Slide>
+                    <Slide bottom>
+                        <WorkIcon
+                            name={"Learning on cards.  "}
+                            images={cardImg}
+                            link={"https://Mr-andrei.github.io/mFridayProject"}
+                            text={textAboutCards}
+                            linkGit={"https://github.com/Mr-andrei/mFridayProject"}
+
+                        />
+                    </Slide>
+                    <Slide bottom>
+                        <WorkIcon
+                            name={"Search people on GitHub.  "}
+                            images={gitSearchAppImage}
+                            link={"https://mr-andrei.github.io/SearchGit"}
+                            text={searchGet}
+                            linkGit={"https://github.com/Mr-andrei/SearchGit"}
+                        />
+                    </Slide>
+
+                    <Slide bottom>
+                        <WorkIcon
+                            name={"Search country.  "}
+                            images={countryAppImage}
+                            link={"https://mr-andrei.github.io/CountryProject/"}
+                            text={countryApp}
+                            linkGit={"https://github.com/Mr-andrei/CountryProject"}
+                        />
+                    </Slide>
+
+                    <Slide bottom>
+                        <WorkIcon
+                            name={"Search weather.  "}
+                            images={weatherAppImage}
+                            link={"https://mr-andrei.github.io/WeatherProject/"}
+                            text={weatherApp}
+                            linkGit={"https://github.com/Mr-andrei/WeatherProject"}
+                        />
+                    </Slide>
+                    <Slide bottom>
+                        <WorkIcon
+                            name={"Social network.  "}
+                            images={socialNetwor}
+                            text={socialNetworkText}
+                            linkGit={"https://github.com/Mr-andrei/My_firstreact"}
+                        />
+                    </Slide>
+                </div>
             </div>
-            <Slide right>
-                <div className={style.liner}></div>
-            </Slide>
-
-
-            <div className={style.container_works}>
-                <Slide bottom>
-                    <WorkIcon
-                        name={"Todolist.  "}
-                        images={todolistImage}
-                        link={"https://mr-andrei.github.io/TodolistFinaly/"}
-                        text={textAboutTodolist}
-                        linkGit={"https://github.com/Mr-andrei/TodolistFinaly"}
-
-                    />
-                </Slide>
-                <Slide bottom>
-                    <WorkIcon
-                        name={"Learning on cards.  "}
-                        images={cardImg}
-                        link={"https://Mr-andrei.github.io/mFridayProject"}
-                        text={textAboutCards}
-                        linkGit={"https://github.com/Mr-andrei/mFridayProject"}
-
-                    />
-                </Slide>
-                <Slide bottom>
-                    <WorkIcon
-                        name={"Search people on GitHub.  "}
-                        images={gitSearchAppImage}
-                        link={"https://mr-andrei.github.io/SearchGit"}
-                        text={searchGet}
-                        linkGit={"https://github.com/Mr-andrei/SearchGit"}
-                    />
-                </Slide>
-
-                <Slide bottom>
-                    <WorkIcon
-                        name={"Search country.  "}
-                        images={countryAppImage}
-                        link={"https://mr-andrei.github.io/CountryProject/"}
-                        text={countryApp}
-                        linkGit={"https://github.com/Mr-andrei/CountryProject"}
-                    />
-                </Slide>
-
-                <Slide bottom>
-                    <WorkIcon
-                        name={"Search weather.  "}
-                        images={weatherAppImage}
-                        link={"https://mr-andrei.github.io/WeatherProject/"}
-                        text={weatherApp}
-                        linkGit={"https://github.com/Mr-andrei/WeatherProject"}
-                    />
-                </Slide>
-                <Slide bottom>
-                    <WorkIcon
-                        name={"Social network.  "}
-                        images={socialNetwor}
-                        text={socialNetworkText}
-                        linkGit={"https://github.com/Mr-andrei/My_firstreact"}
-                    />
-                </Slide>
-            </div>
-
         </div>
     )
 }

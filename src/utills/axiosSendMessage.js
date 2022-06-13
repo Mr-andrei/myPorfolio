@@ -2,7 +2,7 @@ import axios from "axios";
 
 
 const axiosInstance = axios.create({
-    baseURL: 'http://localhost:3010/sendMessage',
+    baseURL: 'https://nodejsserverandreichaus.herokuapp.com/sendMessage',
   });
 
 export const postDataAPI = {

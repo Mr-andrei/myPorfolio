@@ -1,209 +1,109 @@
-* {
-    box-sizing: border-box;
+
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+.main_wrapper {
+    margin-bottom: 200px;
+    padding-left: 20px;
 }
 
 .container {
     max-width: 1170px;
     margin: 0 auto;
-    text-align: center;
 }
 
-.container h3 {
-    font: 700 40px/1.2 'Josefin Sans', sans-serif;
-    letter-spacing: 5px;
-    position: relative;
-    margin-bottom: 30px;
-    font-weight: 300;
-    color: #fff;
-    text-transform: capitalize;
-}
-.liner {
-    background-color: #E7746F;
-    width: 200px;
-    height: 1px;
-    margin: 0 auto 100px;
+.title {
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-bottom: 50px;
 }
 
-.contacts_block {
-
+.block_form {
+    width: 80%;
     margin: 0 auto;
-    width: 700px;
+    text-align: center;
 }
 
 
 .input_block {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+
 }
 
-.form__group {
-    position: relative;
-    padding: 15px 0 0;
-    margin-top: 10px;
-    width: 50%;
-}
 
-.form__field {
-    font-family: inherit;
-    width: 100%;
-    border: 0;
-    border-bottom: 2px solid #9b9b9b;
-    outline: 0;
-    font-size: 18px;
-    color: #9b9b9b;
-    padding: 7px 0;
-    background: transparent;
-    transition: border-color 0.2s;
-}
+.form__field, .form__field_message {
+    width: 70%;
+    padding: 11px 20px;
+    margin-bottom: 30px;
 
-.form__field::placeholder {
-    color: transparent;
-}
+    border: 1px solid #eee;
+    border-radius: 5px;
 
-.form__field:placeholder-shown ~ .form__label {
-    font-size: 1.3rem;
-    cursor: text;
-    top: 20px;
-}
+    transition: all 0.3s ease-in;
 
-.form__label {
-    position: absolute;
-    top: 0;
-    display: block;
-    transition: 0.2s;
-    font-size: 16px;
-    color: #9b9b9b;
-}
-
-.form__field:focus {
-    padding-bottom: 6px;
-    border-width: 3px;
-    border-image: linear-gradient(to right, #E7746F, #f9bd8a);
-    border-image-slice: 1;
-}
-
-.form__field:focus ~ .form__label {
-    position: absolute;
-    top: 0;
-    display: block;
-    transition: 0.2s;
     font-size: 1rem;
-    color: #E7746F;
-}
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
 
-.form__field:required, .form__field:invalid {
-    box-shadow: none;
-}
-
-.box_message {
-    position: relative;
-    margin: 55px 0;
-    width: 50%;
 }
 
 .form__field_message {
-    font-family: inherit;
-    width: 100%;
-    height: 100px;
-    border: 2px solid #9b9b9b;
-    outline: 0;
-    font-size: 18px;
-    color: #9b9b9b;
-    padding: 7px 0;
-    background: transparent;
-    transition: border-color 0.4s;
-}
-
-.form__field_message::placeholder {
-    color: transparent;
-}
-
-.form__field_message:placeholder-shown ~ .form__label_message {
-    font-size: 1.3rem;
-    cursor: text;
-    top: 5px;
-    left: 5px;
-}
-
-.form__label_message {
-    position: absolute;
-    top: -20px;
-    display: block;
-    transition: 0.4s;
-    font-size: 16px;
-    color: #9b9b9b;
+    margin-bottom: 50px;
 }
 
 .form__field_message:focus {
-    padding-bottom: 6px;
-    border-width: 3px;
-    border-image: linear-gradient(to right, #E7746F, #f9bd8a);
-    border-image-slice: 1;
+    box-shadow: 0 0 0 0.2rem rgba(127, 181, 181, 0.4);
 }
 
-.form__field_message:focus ~ .form__label_message {
-    position: absolute;
-    top: -20px;
-    left: 0;
-    display: block;
-    transition: 0.2s;
-    font-size: 16px;
-    color: #E7746F;
-}
-
-.form__field:required, .form__field:invalid {
-    box-shadow: none;
+.form__field:focus {
+    box-shadow: 0 0 0 0.2rem rgba(127, 181, 181, 0.4);
 }
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-    box-shadow: 0 0 0 30px #252527 inset !important;
-    -webkit-text-fill-color: #9b9b9b;
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 50px white inset; /* можно изменить на любой вариант цвета */
+    -webkit-text-fill-color: #333;
 }
 
-.svg_wrapper {
-    margin: 50px auto;
-    position: relative;
-    width: 300px;
-
-    background: #252527;
-    transform: translateY(-50%);
-    cursor: pointer;
+.container_btn {
+    margin-bottom: 20px;
 }
 
+.button {
+    width: 180px;
+    line-height: 40px;
+    text-align: center;
 
-.shape1,
-.shape2 {
-    stroke-dasharray: 1120;
-    stroke-width: 5px;
-    fill: transparent;
-    stroke: #E7746F;
-    border-bottom: 5px solid black;
-    transition-timing-function: linear;
-    transition: stroke-dashoffset 2s, stroke-dasharray 2s;
+    background-color: #7FB5B5;
+
+    border-radius: 20px;
+    border: none;
+
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: Overpass, monospace, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    letter-spacing: 1px;
+
+    transition: .3s;
 }
 
-.shape1 {
-    stroke-dashoffset: 1120;
-}
-.shape2 {
-    stroke-dashoffset: -1120;
+.button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 7px 0 #448383;
 }
 
-.text {
-    color: #9b9b9b;
-    font-size: 22px;
-    position: relative;
-    top: -47px;
-    transition: 0.7s;
+.button:active {
+    transform: translateY(-2px);
+    box-shadow: 0 1px 0 #448383;
 }
 
-.svg_wrapper:hover .shape1,
-.svg_wrapper:hover .shape2 {
-    stroke-dashoffset: 0;
-    stroke-dasharray: 1120;
+@media (max-width: 500px) {
+    .form__field, .form__field_message{
+        width: 100%;
+    }
 }

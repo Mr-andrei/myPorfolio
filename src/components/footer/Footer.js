@@ -7,12 +7,12 @@ const Footer = () => {
     return (
         <footer className={style.footer_main}>
             <div className={style.footer_container}>
-                <div>
+                <div className={style.container_flex}>
 
                     <div className={style.block_icon}>
                         <a href="https://t.me/klin000"><FontAwesomeIcon icon={faTelegram} className={style.icon}/></a>
-                        <a href="https://www.linkedin.com/in/andrei-chaus-967b6922a/"> <FontAwesomeIcon
-                            icon={faLinkedin} className={style.icon}/></a>
+                        <a href="https://www.linkedin.com/in/andrei-chaus-967b6922a/"><FontAwesomeIcon
+                            icon={faLinkedin} className={style.icon} style={{margin: "0 30px"}}/></a>
                         <a href="https://github.com/Mr-andrei"><FontAwesomeIcon icon={faGithub} className={style.icon}/></a>
                     </div>
 

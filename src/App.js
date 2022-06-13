@@ -4,13 +4,16 @@ import MyWorks from "./components/myWorks/MyWorks";
 import Contacts from "./components/contacts/Contacts";
 import Footer from "./components/footer/Footer";
 import NavBar from "./components/navBar/NavBar";
-import AboutMeInfo from "./components/aboutMe/AboutMeInfo";
+import MeInfo from "./components/MeInfo/MeInfo";
+import AboutMe from "./components/AboutMe/AboutMe";
+
 
 function App() {
     return (
         <div className={style.app_container}>
             <NavBar/>
-            <AboutMeInfo/>
+            <MeInfo/>
+            {/*<AboutMe/>*/}
             <MySkills/>
             <MyWorks/>
             <Contacts/>
