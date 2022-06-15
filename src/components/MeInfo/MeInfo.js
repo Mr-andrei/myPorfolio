@@ -1,5 +1,5 @@
 import style from './style.module.css'
-import photoMy from "./../../photos/Chaus.jpg"
+import photoMy from "./../../photos/chausA.jpg"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub, faLinkedin, faTelegram} from '@fortawesome/free-brands-svg-icons'
 import Fade from 'react-reveal/Fade';

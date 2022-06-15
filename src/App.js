@@ -5,7 +5,7 @@ import Contacts from "./components/contacts/Contacts";
 import Footer from "./components/footer/Footer";
 import NavBar from "./components/navBar/NavBar";
 import MeInfo from "./components/MeInfo/MeInfo";
-import AboutMe from "./components/AboutMe/AboutMe";
+
 
 
 function App() {
